@@ -3,3 +3,19 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+
+.cardsContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cardsContainer .flexItem {
+    flex: 1 1 auto; 
+    text-align: center;
+}
+
+.cardsContainer article img{
+    height: 200px;
+    width: 300px;
+}
