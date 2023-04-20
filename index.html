@@ -10,52 +10,57 @@
   <body>
     <header>
       <nav>
+        <div style="display: flex">
+          <img class="logo" src="assets/logo.png" alt="logo" />
+          <a href="#" class="titre_site">FèsMoiVoir</a>
+        </div>
         <ul>
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Histoire</a></li>
-          <li><a href="#">Lieux</a></li>
+          <li><a href="#">HISTOIRE</a></li>
+          <li class="menu_deroulant">
+            <a href="#">LIEUX</a>
+            <ul class="sous_menu">
+              <li><a href="#">La Médina</a></li>
+              <li><a href="#">Le musée de l'artisanat</a></li>
+              <li><a href="#">la "Medersa Attarine"</a></li>
+              <li><a href="#">Le palais royal</a></li>
+              <li><a href="#">Le jardin "Jnan Sbil"</a></li>
+              <li><a href="#">Les tombeaux de Marinid</a></li>
+            </ul>
+          </li>
+          <li><a href="#">ACCUEIL</a></li>
+          <li><a href="#">CONTACT</a></li>
         </ul>
       </nav>
-      <div class="background_img">
-        <p>Bienvenur sur le site de Fès</p>
+      <div class="conteneur-image">
+        <img class="img_debut" src="assets/fes.jpg" alt="Mon image" />
+        <div class="texte-image">
+          Bienvenue sur le site de la ville de Fès <br />
+          مرحبا بكم في موقع فاس <br />
+          Marhaban bikum fi mawqie Fas
+        </div>
       </div>
     </header>
-
-    <section>
-      <div class="cardsFirstRow"></div>
-      <div>
-        <img src="" />
-        <p></p>
-        <button><a href=""></a></button>
-      </div>
-      <div>
-        <img src="" />
-        <p></p>
-        <button><a href=""></a></button>
-      </div>
-      <div>
-        <img src="" />
-        <p></p>
-        <button><a href=""></a></button>
-      </div>
-      <div class="cardsSecondRow"></div>
-      <div>
-        <img src="" />
-        <p></p>
-        <button><a href=""></a></button>
-      </div>
-      <div>
-        <img src="" />
-        <p></p>
-        <button><a href=""></a></button>
-      </div>
-      <div>
-        <img src="" />
-        <p></p>
-        <button><a href=""></a></button>
-      </div>
+    <section class="histoire">
+      <p>
+        Doyenne des villes impériales, Fez fut fondée en 789 après JC par Idriss
+        Ier, un descendant du prophète. Son fils, le sultan Idriss II, décide en
+        809 d’y établir le siège de la dynastie. Dès 818, le sultan accueille
+        dans sa cité 8 000 familles de musulmans andalous. Sept ans plus tard,
+        cette nouvelle population est renforcée par l’arrivée de juifs et de
+        Kairouanais (Tunisie). Riche de ces multiples patrimoines religieux,
+        culturels et architecturaux, Fez devient rapidement le centre religieux
+        et culturel du Maroc. Dès lors, malgré les guerres dynastiques et les
+        périodes où elle ne fut pas la capitale officielle du pays, la cité
+        impériale n’a jamais cessé de s’agrandir et d’embellir. De nos jours,
+        Fez est sans doute la ville la plus authentique d’Afrique du Nord. Le
+        rayonnement intellectuel de son université coranique, sa célèbre mosquée
+        Karaouiyne, ses trésors de l’art arabo-andalou, sa médina médiévale de
+        Fez el-Bali et ses artisans de grand talent en font la gardienne des
+        traditions de l’islam.
+      </p>
     </section>
 
+    <<<<<<< HEAD
     <form>
       <fieldset class="fieldset1">
         <legend>Vos coordonnées</legend>
@@ -122,5 +127,62 @@
         Copyright © 2023, Office National Marocain du Tourisme.
       </p>
     </footer>
+    =======
+    <section class="cardsContainer">
+      <article class="cards">
+        <img src="./assets/medina.jpg" />
+        some text
+        <button><a href="">button</a></button>
+      </article>
+
+      <article class="cards">
+        <img src="./assets/museeArtisanat.jpg" />
+        some text
+        <button><a href="">button</a></button>
+      </article>
+
+      <article class="cards">
+        <img src="./assets/laMedersaAttarine.jpg" />
+        some text
+        <button><a href="">button</a></button>
+      </article>
+
+      <article class="cards">
+        <img src="./assets/palaisRoyal.jpg" />
+        some text
+        <button><a href="">button</a></button>
+      </article>
+
+      <article class="cards">
+        <img src="./assets/jardin-jnan-sbil.jpg" />
+        some text
+        <button><a href="">button</a></button>
+      </article>
+
+      <article class="cards">
+        <img src="./assets/tombeauxDeMarinid.jpg" />
+        some text
+        <button class><a href="">button</a></button>
+      </article>
+    </section>
+
+    <form>
+      <label for="prenom">Prénom</label> :
+      <input type="text" name="prenom" id="prenom" placeholder="prenom" />
+      <label for="telephone">Telephone </label> :
+      <input
+        type="tel"
+        name="telephone"
+        id="telephone"
+        placeholder="telephone"
+      />
+      <label for="Nom">Votre Nom </label> :
+      <input type="text" name="Nom" id="Nom" placeholder="Nom" />
+      <label for="email">Votre email </label> :
+      <input type="email" name="email" id="email" placeholder="email" />
+      <button>submit</button> <input type="checkbox" name="choix" />
+    </form>
+
+    >>>>>>> main
   </body>
 </html>
