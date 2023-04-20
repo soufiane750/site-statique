@@ -1,91 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-    
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Histoire</a></li>
-                <li><a href="#">Lieux</a></li>
-            </ul>
-        </nav>
-        <div class="background_img">
-            <p>
-                Bienvenur sur le site de Fès
-            </p>
-        </div>
+      <nav>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Histoire</a></li>
+          <li><a href="#">Lieux</a></li>
+        </ul>
+      </nav>
+      <div class="background_img">
+        <p>Bienvenur sur le site de Fès</p>
+      </div>
     </header>
 
     <section>
-        <div class="cardsFirstRow"></div>
-            <div>
-                <img src="">
-                <p></p>
-                <button><a href=""></a></button>
-            </div>
-            <div>
-                <img src="">
-                <p></p>
-                <button><a href=""></a></button>
-            </div>
-            <div>
-                <img src="">
-                <p></p>
-                <button><a href=""></a></button>
-            </div>
-        <div class="cardsSecondRow"></div>
-            <div>
-                <img src="">
-                <p></p>
-                <button><a href=""></a></button>
-            </div>
-            <div>
-                <img src="">
-                <p></p>
-                <button><a href=""></a></button>
-            </div>
-            <div>
-                <img src="">
-                <p></p>
-                <button><a href=""></a></button>
-            </div>
+      <div class="cardsFirstRow"></div>
+      <div>
+        <img src="" />
+        <p></p>
+        <button><a href=""></a></button>
+      </div>
+      <div>
+        <img src="" />
+        <p></p>
+        <button><a href=""></a></button>
+      </div>
+      <div>
+        <img src="" />
+        <p></p>
+        <button><a href=""></a></button>
+      </div>
+      <div class="cardsSecondRow"></div>
+      <div>
+        <img src="" />
+        <p></p>
+        <button><a href=""></a></button>
+      </div>
+      <div>
+        <img src="" />
+        <p></p>
+        <button><a href=""></a></button>
+      </div>
+      <div>
+        <img src="" />
+        <p></p>
+        <button><a href=""></a></button>
+      </div>
     </section>
 
     <form>
-        <fieldset>
-            <legend>Vos coordonnées</legend>  
-            <input type="text" name="nom" id="nom" placeholder="Nom" >
-            <input type="text" name="prenom" id="prenom" placeholder="Prénom">
-            <input type="email" name="email" id="email" placeholder="E-mail">
-         </fieldset>
-         <fieldset>
-            <legend>Comment avez vous entendu parlez de nous ?</legend>
-            
-               <input type="radio" name="souhait" value="Internet" id="Internet"> <label for="Internet">Internet</label>
-               <input type="radio" name="souhait" value="boucheàoreille" id="boucheàoreille"> <label for="boucheàoreille">Bouche à oreille</label>
-               <input type="radio" name="souhait" value="agence" id="agence"> <label for="agence">Agence de voyage </label>
-               <input type="radio" name="souhait" value="autre" id="autre"> <label for="autre">Autre...</label>
-            
-            
-               <label for="precisions">Si "Autre", veuillez préciser :</label>
-               <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
-         </fieldset>
+      <fieldset class="fieldset1">
+        <legend>Vos coordonnées</legend>
+        <input type="text" name="nom" id="nom" placeholder="Nom" />
+        <input type="text" name="prenom" id="prenom" placeholder="Prénom" />
+        <input type="email" name="email" id="email" placeholder="E-mail" />
+      </fieldset>
+      <fieldset class="fieldset2">
+        <legend>Comment avez vous entendu parlez de nous ?</legend>
 
+        <input type="radio" name="souhait" value="Internet" id="Internet" />
+        <label for="Internet">Internet</label>
+        <input
+          type="radio"
+          name="souhait"
+          value="boucheàoreille"
+          id="boucheàoreille"
+        />
+        <label for="boucheàoreille">Bouche à oreille</label>
+        <input type="radio" name="souhait" value="agence" id="agence" />
+        <label for="agence">Agence de voyage </label>
+        <input type="radio" name="souhait" value="autre" id="autre" />
+        <label for="autre">Autre...</label>
 
+        <label for="precisions">Si "Autre", veuillez préciser :</label>
+        <textarea
+          class="textarea"
+          name="precisions"
+          id="precisions"
+          cols="40"
+          rows="4"
+        ></textarea>
+      </fieldset>
     </form>
-    
+
     <footer>
-
+      <ul>
+        <li>
+          <img
+            class="iconsocial"
+            src="/assets/facebook.png"
+            alt="icone facebook"
+          />
+        </li>
+        <li>
+          <a href="#">
+            <img
+              class="iconsocial"
+              src="/assets/maroc.png"
+              alt="icone maroc"
+              id="maroc"
+            />
+          </a>
+        </li>
+        <li>
+          <img
+            class="iconsocial"
+            src="/assets/instagram.png"
+            alt="icone instagram"
+          />
+        </li>
+      </ul>
+      <p class="text-footer">
+        Copyright © 2023, Office National Marocain du Tourisme.
+      </p>
     </footer>
-
-
-</body>
+  </body>
 </html>
