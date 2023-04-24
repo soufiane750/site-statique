@@ -34,6 +34,18 @@ header nav ul {
 }
 
   /*Olivier*/
+  /*overflow*/
+  .cardsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  article.cards {
+    width: 100%;
+    margin-left: -120px;
+  }
 
   /*Soufiane*/
 }
@@ -44,8 +56,12 @@ header nav ul {
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
   font-family: "Pacifico", cursive;
+  background-color: #f2d0a7;
+  height: 100%;
+  width: 100%;
 }
 form {
   background-color: #f2d0a7;
@@ -113,10 +129,6 @@ footer ul {
 }
 .text-footer {
   margin-bottom: 0px;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
 }
 
 nav {
@@ -253,21 +265,26 @@ nav a {
 }
 
 .cardsContainer {
+  margin-top: 30px;
   margin-left: 60px;
   margin-right: 60px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 40px;
+  background-color: #f2d0a7;
+  /*width: 100%;*/
 }
 
 .cards {
   display: flex;
   flex-direction: column;
-  min-width: 30px;
   width: 28%;
   align-items: center;
+  gap: 20px;
   /*height: auto;*/
+  background-color: #f29849;
 
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -286,4 +303,25 @@ nav a {
 
 .cards button {
   width: 50%;
+  margin-bottom: 20px;
+  background-color: #f2360c;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 4px;
+}
+
+a {
+  color: black;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
 }
