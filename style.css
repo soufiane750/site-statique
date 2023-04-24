@@ -48,6 +48,22 @@ header nav ul {
   }
 
   /*Soufiane*/
+  body,
+  html {
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+  }
+  .fieldset1 {
+    align-items: center;
+  }
+  .fieldset2 {
+    flex-direction: column;
+  }
+  legend {
+    margin-bottom: 5px;
+  }
 }
 
 * {
