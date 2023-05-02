@@ -1,71 +1,6 @@
-@media screen and (max-width:400px) {
-  
-  /*Thomas*/
-
-.texte-image p {
-  font-size: 35%;
-  font-weight: bold;
-}
-
-nav{
-  flex-direction: column;
-}
-
-body .histoire p {
-  line-height: 1.5;
-  margin: 5px;
-}
-
-nav ul li a {
-  margin-right: 0px;
-  padding-top: 25px;
-}
-
-body, html{
-  width: 100%;
-  height: 100%;
-  padding: 0px;
-  margin: 0px;
-
-}
-
-header nav ul {
-  justify-content: space-around; 
-}
-
-  /*Olivier*/
-  /*overflow*/
-  .cardsContainer {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-  }
-
-  article.cards {
-    width: 100%;
-    margin-left: -120px;
-  }
-
-  /*Soufiane*/
-  body,
-  html {
-    width: 100vw;
-    height: 100vh;
-    padding: 0px;
-    margin: 0px;
-  }
-  .fieldset1 {
-    align-items: center;
-  }
-  .fieldset2 {
-    flex-direction: column;
-  }
-  legend {
-    margin-bottom: 5px;
-  }
-}
-
+/* ----------------------------- */
+/* ----------Generals----------- */
+/* ----------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -79,74 +14,26 @@ html {
   height: 100%;
   width: 100%;
 }
-form {
-  background-color: #f2d0a7;
+
+a {
+  color: black;
 }
-.fieldset1 {
-  display: flex;
-  flex-direction: column;
-  background-color: #f29849;
-  border: 2px solid black;
-  border-radius: 6px;
-  margin-bottom: 20px;
+a:link {
+  text-decoration: none;
 }
-.fieldset2 {
-  background-color: #f29849;
-  border: 2px solid black;
-  border-radius: 6px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
 }
 
-legend {
-  background-color: #f2360c;
-  border: 2px solid black;
-  border-radius: 6px;
-  padding: 4px;
-}
-input[type="text"],
-input[type="email"] {
-  border: solid 2px;
-  border-radius: 6px;
-  padding: 10px;
-  margin: 10px;
-  width: 50%;
-}
-.textarea {
-  margin-bottom: 9px;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #f2d0a7;
-  height: 200px;
-}
-footer ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-}
-.iconsocial {
-  transition: transform 0.2s;
-  width: 70px;
-  height: 70px;
-  margin-top: 20px;
-}
-.iconsocial:not(#maroc) {
-  cursor: grab;
-}
-.iconsocial:hover {
-  transform: scale(1.5);
-}
-.text-footer {
-  margin-bottom: 0px;
-}
-
+/* ----------------------------- */
+/* ------------Header----------- */
+/* ----------------------------- */
 nav {
   display: flex;
   justify-content: space-between;
@@ -234,6 +121,9 @@ nav a {
   display: block;
 }
 
+/* ----------------------------- */
+/* ------------Main------------- */
+/* ----------------------------- */
 .conteneur-image {
   position: relative;
   background-color: #fff;
@@ -280,6 +170,9 @@ nav a {
   line-height: 2;
 }
 
+/* ----------------------------- */
+/* ------------Card------------- */
+/* ----------------------------- */
 .cardsContainer {
   margin-top: 30px;
   margin-left: 60px;
@@ -326,18 +219,153 @@ nav a {
   padding: 4px;
 }
 
-a {
-  color: black;
+/* ----------------------------- */
+/* ------------form------------- */
+/* ----------------------------- */
+form {
+  background-color: #f2d0a7;
 }
-a:link {
-  text-decoration: none;
+.fieldset1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #f29849;
+  border: 2px solid black;
+  border-radius: 6px;
+  margin-bottom: 20px;
 }
-a:visited {
-  text-decoration: none;
+
+legend {
+  background-color: #f2360c;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 4px;
 }
-a:hover {
-  text-decoration: none;
+
+input[type="text"],
+input[type="email"] {
+  border: solid 2px;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 10px;
+  width: 50%;
 }
-a:active {
-  text-decoration: none;
+.textarea {
+  margin-bottom: 9px;
+}
+
+/* ----------------------------- */
+/* ------------Footer----------- */
+/* ----------------------------- */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f2d0a7;
+  height: 200px;
+}
+
+footer ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.iconsocial {
+  transition: transform 0.2s;
+  width: 70px;
+  height: 70px;
+  margin-top: 20px;
+}
+
+.iconsocial:not(#maroc) {
+  cursor: grab;
+}
+
+.iconsocial:hover {
+  transform: scale(1.5);
+}
+
+.text-footer {
+  margin-bottom: 0px;
+}
+
+/* ----------------------------- */
+/* --------Media Querries------- */
+/* ----------------------------- */
+
+@media screen and (max-width:400px) {
+    /* ----------------------------- */
+    /* ----------Generals----------- */
+    /* ----------------------------- */
+    body, html{
+      width: 100%;
+      height: 100%;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    /* ----------------------------- */
+    /* ------------Header----------- */
+    /* ----------------------------- */
+    header nav ul {
+      justify-content: space-around; 
+    }
+
+    nav{
+      flex-direction: column;
+    }
+
+    nav ul li a {
+      margin-right: 0px;
+      padding-top: 25px;
+    }
+
+    /* ----------------------------- */
+    /* ------------Main------------- */
+    /* ----------------------------- */
+    .texte-image p {
+      font-size: 35%;
+      font-weight: bold;
+    }
+  
+  
+    body .histoire p {
+      line-height: 1.5;
+      margin: 5px;
+    }
+
+    /* ----------------------------- */
+    /* ------------Card------------- */
+    /* ----------------------------- */
+    .cardsContainer {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+    }
+
+    article.cards {
+      width: 100%;
+      margin-left: -120px;
+    }
+
+
+    /* ----------------------------- */
+    /* ------------form------------- */
+    /* ----------------------------- */
+    .fieldset1 {
+      align-items: center;
+    }
+    .fieldset2 {
+      flex-direction: column;
+    }
+    legend {
+      margin-bottom: 5px;
+    }
+
+    /* ----------------------------- */
+    /* ------------Footer----------- */
+    /* ----------------------------- */
 }

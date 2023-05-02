@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>FèsMoiVoir</title>
   </head>
   <body>
     <header>
+    <!-- ------------------------------------------------------------------------ -->
+    <!-- ---------------------------Nav------------------------------------------ -->
+    <!-- ------------------------------------------------------------------------ -->
+
       <nav>
         <div class="ensemble_logo" style="display: flex">
           <img class="logo" src="assets/logo.png" alt="logo" />
@@ -31,6 +35,11 @@
           <li><a href="#">CONTACT</a></li>
         </ul>
       </nav>
+
+    <!-- ------------------------------------------------------------------------ -->
+    <!-- -------------------Carousel--------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------ -->
+
       <div class="conteneur-image">
         <img class="img_debut" src="assets/fes.jpg" alt="Mon image" />
         <div class="texte-image">
@@ -41,6 +50,11 @@
         </div>
       </div>
     </header>
+
+    <!-- ------------------------------------------------------------------------ -->
+    <!-- --------------------------histoire-------------------------------------- -->
+    <!-- ------------------------------------------------------------------------ -->
+
     <section class="histoire">
       <p>
         Doyenne des villes impériales, Fez fut fondée en 789 après JC par Idriss
@@ -97,6 +111,11 @@
         <button class><a href="">Découvrir</a></button>
       </article>
     </section>
+
+    <!-- ------------------------------------------------------------------------ -->
+    <!-- ---------------------------Form----------------------------------------- -->
+    <!-- ------------------------------------------------------------------------ -->
+
     <form>
       <fieldset class="fieldset1">
         <legend>Vos coordonnées</legend>
@@ -104,40 +123,11 @@
         <input type="text" name="prenom" id="prenom" placeholder="Prénom" />
         <input type="email" name="email" id="email" placeholder="E-mail" />
       </fieldset>
-      <fieldset class="fieldset2">
-        <legend>Comment avez vous entendu parlez de nous ?</legend>
-        <div>
-          <input type="radio" name="souhait" value="Internet" id="Internet" />
-          <label for="Internet">Internet</label>
-        </div>
-        <div>
-          <input
-            type="radio"
-            name="souhait"
-            value="boucheàoreille"
-            id="boucheàoreille"
-          />
-          <label for="boucheàoreille">Bouche à oreille</label>
-        </div>
-        <div>
-          <input type="radio" name="souhait" value="agence" id="agence" />
-          <label for="agence">Agence de voyage </label>
-        </div>
-        <div>
-          <input type="radio" name="souhait" value="autre" id="autre" />
-          <label for="autre">Autre...</label>
-        </div>
-
-        <label for="precisions">Si "Autre", veuillez préciser :</label>
-        <textarea
-          class="textarea"
-          name="precisions"
-          id="precisions"
-          cols="40"
-          rows="4"
-        ></textarea>
-      </fieldset>
     </form>
+
+    <!-- ------------------------------------------------------------------------ -->
+    <!-- ---------------------Footer--------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------ -->
 
     <footer>
       <ul>
