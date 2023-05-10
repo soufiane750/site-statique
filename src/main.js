@@ -11,6 +11,7 @@ class Card extends HTMLElement {
         this.classList.add("cards");
         this._btn.classList.add("btn-card");
     
+
         this._cover.src = cover;
         this._title.textContent = title;
         this._btn.textContent = "Découvrir";
@@ -41,4 +42,12 @@ for (let i = 0; btn_card[i]; i++) {
             // window.location = `place_info.html?place=${btn_card[i].parentElement._btn.id}`;
             window.location = `place_info.html?place=${id}`;
     })
+}/* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("navOverlay").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("navOverlay").style.width = "0%";
 }
