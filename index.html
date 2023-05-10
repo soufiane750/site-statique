@@ -8,54 +8,80 @@
     <title>FèsMoiVoir</title>
   </head>
   <body>
-    <header>
+    <!-- <header> -->
     <!-- ------------------------------------------------------------------------ -->
     <!-- ---------------------------Nav------------------------------------------ -->
     <!-- ------------------------------------------------------------------------ -->
 
-      <nav>
-        <div class="ensemble_logo" style="display: flex">
-          <img class="logo" src="assets/logo.png" alt="logo" />
-          <a href="#" class="titre_site">FèsMoiVoir</a>
-        </div>
-        <ul>
-          <li><a href="#">HISTOIRE</a></li>
-          <li class="menu_deroulant">
-            <a href="#">LIEUX</a>
-            <ul class="sous_menu">
-              <li><a href="#">La Médina</a></li>
-              <li><a href="#">Le musée de l'artisanat</a></li>
-              <li><a href="#">la "Medersa Attarine"</a></li>
-              <li><a href="#">Le palais royal</a></li>
-              <li><a href="#">Le jardin "Jnan Sbil"</a></li>
-              <li><a href="#">Les tombeaux de Marinid</a></li>
-            </ul>
-          </li>
-          <li><a href="#">ACCUEIL</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </nav>
+    <nav id="navPc">
+      <div class="ensemble_logo" style="display: flex">
+        <img class="logo" src="assets/logo.png" alt="logo" />
+        <a href="#" class="titre_site">FèsMoiVoir</a>
+      </div>
+      <ul>
+        <li><a href="#">HISTOIRE</a></li>
+        <li class="menu_deroulant">
+          <a href="#">LIEUX</a>
+          <ul class="sous_menu">
+            <li><a href="#">La Médina</a></li>
+            <li><a href="#">Le musée de l'artisanat</a></li>
+            <li><a href="#">la "Medersa Attarine"</a></li>
+            <li><a href="#">Le palais royal</a></li>
+            <li><a href="#">Le jardin "Jnan Sbil"</a></li>
+            <li><a href="#">Les tombeaux de Marinid</a></li>
+          </ul>
+        </li>
+        <li><a href="#">ACCUEIL</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <nav id="navMobile">
+      <!-- <span class="burgerContainer" onclick="openNav()">
+          <img class="burger" src="assets/burger.png" />
+        </span> -->
+      <span style="font-size: 4rem; cursor: pointer" onclick="openNav()"
+        >&#9776;
+      </span>
+    </nav>
+
+    <div id="navOverlay" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="#histoire" onclick="closeNav()">Histoire</a>
+        <a href="#cardsContainer" onclick="closeNav()">Les Lieux</a>
+        <a href="#" onclick="closeNav()">Accueil</a>
+        <a href="#formulaire" onclick="closeNav()">Contact</a>
+      </div>
+    </div>
+
+    <!-- The overlay -->
 
     <!-- ------------------------------------------------------------------------ -->
     <!-- -------------------Carousel--------------------------------------------- -->
     <!-- ------------------------------------------------------------------------ -->
 
-      <div class="conteneur-image">
-        <img class="img_debut" src="assets/fes.jpg" alt="Mon image" />
-        <div class="texte-image">
-          <p>
+    <div class="conteneur-image">
+      <img class="img_debut" src="assets/fes.jpg" alt="Mon image" />
+      <div class="texte-image">
+        <p>
           Bienvenue sur le site de la ville de Fès <br />
           مرحبا بكم في موقع فاس <br />
-          Marhaban bikum fi mawqie Fas</p>
-        </div>
+          Marhaban bikum fi mawqie Fas
+        </p>
       </div>
-    </header>
+    </div>
+    <!-- </header> -->
 
     <!-- ------------------------------------------------------------------------ -->
     <!-- --------------------------histoire-------------------------------------- -->
     <!-- ------------------------------------------------------------------------ -->
 
-    <section class="histoire">
+    <section class="histoire" id="histoire">
       <p>
         Doyenne des villes impériales, Fez fut fondée en 789 après JC par Idriss
         Ier, un descendant du prophète. Son fils, le sultan Idriss II, décide en
@@ -74,7 +100,7 @@
         traditions de l’islam.
       </p>
     </section>
-    <section class="cardsContainer">
+    <section class="cardsContainer" id="cardsContainer">
       <article class="cards">
         <img src="./assets/medina.jpg" />
         <h4>La Medina</h4>
@@ -89,7 +115,7 @@
 
       <article class="cards">
         <img src="./assets/laMedersaAttarine.jpg" />
-        <h4>La medersa Attarine </h4>
+        <h4>La medersa Attarine</h4>
         <button><a href="">Découvrir</a></button>
       </article>
 
@@ -117,7 +143,7 @@
     <!-- ------------------------------------------------------------------------ -->
 
     <form>
-      <fieldset class="fieldset1">
+      <fieldset class="fieldset1" id="formulaire">
         <legend>Vos coordonnées</legend>
         <input type="text" name="nom" id="nom" placeholder="Nom" />
         <input type="text" name="prenom" id="prenom" placeholder="Prénom" />
@@ -160,5 +186,6 @@
         Copyright © 2023, Office National Marocain du Tourisme.
       </p>
     </footer>
+    <script src="src/main.js"></script>
   </body>
 </html>
