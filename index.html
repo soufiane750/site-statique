@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/head_foot.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <title>FèsMoiVoir</title>
   </head>
   <body>
@@ -12,15 +13,15 @@
     <!-- ------------------------------------------------------------------------ -->
     <!-- ---------------------------Nav------------------------------------------ -->
     <!-- ------------------------------------------------------------------------ -->
-
+     
       <nav>
-        <div class="ensemble_logo" style="display: flex">
+        <div class="ensemble-logo">
           <img class="logo" src="assets/logo.png" alt="logo" />
-          <a href="#" class="titre_site">FèsMoiVoir</a>
+          <a href="index.html" class="titre_site">FèsMoiVoir</a>
         </div>
         <ul>
           <li><a href="#">HISTOIRE</a></li>
-          <li class="menu_deroulant">
+          <li class="menu-deroulant">
             <a href="#">LIEUX</a>
             <ul class="sous_menu">
               <li><a href="#">La Médina</a></li>
@@ -74,43 +75,14 @@
         traditions de l’islam.
       </p>
     </section>
-    <section class="cardsContainer">
-      <article class="cards">
-        <img src="./assets/medina.jpg" />
-        <h4>La Medina</h4>
-        <button><a href="">Découvrir</a></button>
-      </article>
 
-      <article class="cards">
-        <img src="./assets/museeArtisanat.jpg" />
-        <h4>Le musée de l'artisanat</h4>
-        <button><a href="">Découvrir</a></button>
-      </article>
-
-      <article class="cards">
-        <img src="./assets/laMedersaAttarine.jpg" />
-        <h4>La medersa Attarine </h4>
-        <button><a href="">Découvrir</a></button>
-      </article>
-
-      <article class="cards">
-        <img src="./assets/palaisRoyal.jpg" />
-        <h4>Le palais royal</h4>
-        <button><a href="">Découvrir</a></button>
-      </article>
-
-      <article class="cards">
-        <img src="./assets/jardin-jnan-sbil.jpg" />
-        <h4>Le jardin Jnan sbil</h4>
-        <button><a href="">Découvrir</a></button>
-      </article>
-
-      <article class="cards">
-        <img src="./assets/tombeauxDeMarinid.jpg" />
-        <h4>Les tombeaux de Marinid</h4>
-        <button class><a href="">Découvrir</a></button>
-      </article>
+    <!-- ------------------------------------------------------------------------ -->
+    <!-- --------------------------Card------------------------------------------ -->
+    <!-- ------------------------------------------------------------------------ -->
+    <section id="cards-container">
+      
     </section>
+
 
     <!-- ------------------------------------------------------------------------ -->
     <!-- ---------------------------Form----------------------------------------- -->
@@ -161,4 +133,5 @@
       </p>
     </footer>
   </body>
+  <script type="module" src="src/main.js"></script>
 </html>
