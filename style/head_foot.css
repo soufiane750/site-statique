@@ -1,0 +1,227 @@
+/* ----------------------------- */
+/* ------------Header----------- */
+/* ----------------------------- */
+#navPc {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f29849;
+  padding: 1.25rem 0;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+#navMobile {
+  display: none;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0); /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.3s; /* 0.3 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 20%; /* 20% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 3rem; /* Top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 2rem;
+  right: 5rem;
+  font-size: 5rem;
+}
+/* #navOverlay {
+  display: none;
+} */
+
+.ensemble_logo:hover {
+  transform: translateY(-0.3rem);
+}
+
+.ensemble_logo {
+  transition: all 0.2s ease-in-out;
+}
+
+.titre_site {
+  margin: 0 0.6rem;
+  align-items: center;
+  display: flex;
+  font-size: 3vw;
+  font-family: "Mozaik Ramadhan", sans-serif;
+  font-weight: bold;
+}
+
+.logo {
+  height: 4.5vw;
+  margin-left: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  transform: translateY(-0.3rem);
+}
+
+nav ul li ul li:hover {
+  transform: translateY(-0.3rem);
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  margin-right: 4.5rem;
+}
+
+.menu_deroulant {
+  position: relative;
+}
+
+.sous_menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -60%;
+  z-index: 1;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  padding: 0.6rem 0 0.6rem 1.2rem;
+  background-color: #f29849;
+}
+
+.sous_menu li {
+  display: block;
+  width: 100%;
+  margin-top: 1.1rem;
+  margin-bottom: 0.6rem;
+  padding-right: 1.25rem;
+}
+
+.menu_deroulant:hover .sous_menu {
+  display: block;
+}
+
+
+/* ----------------------------- */
+/* ------------Footer----------- */
+/* ----------------------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2d0a7;
+    height: 200px;
+  }
+  
+  footer ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  
+  .iconsocial {
+    transition: transform 0.2s;
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+  }
+  
+  .iconsocial:not(#maroc) {
+    cursor: grab;
+  }
+  
+  .iconsocial:hover {
+    transform: scale(1.5);
+  }
+  
+  .text-footer {
+    margin-bottom: 0px;
+  }
+
+/* ----------------------------- */
+/* --------Media Querries------- */
+/* ----------------------------- */
+
+@media screen and (max-width:500px) {
+    /* ----------------------------- */
+    /* ------------Header----------- */
+    /* ----------------------------- */
+    header nav ul {
+      justify-content: space-around;
+    }
+    #navMobile {
+      display: flex;
+      justify-content: space-between;
+      background-color: #f29849;
+      padding: 1rem 1rem;
+      position: sticky;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      flex-direction: column;
+    }
+    #navPc {
+      display: none;
+    }
+        
+    /* ----------------------------- */
+    /* ------------Footer----------- */
+    /* ----------------------------- */
+}
+
+@media screen and (max-width: 900px) {
+  /* ----------------------------- */
+  /* ------------Header----------- */
+  /* ----------------------------- */
+  header {
+    font-size: 10px;
+  }
+}
