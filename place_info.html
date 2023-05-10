@@ -13,28 +13,50 @@
         <!-- ---------------------------Nav------------------------------------------ -->
         <!-- ------------------------------------------------------------------------ -->
         
-        <nav>
-            <div class="ensemble-logo">
-                <img class="logo" src="assets/logo.png" alt="logo" />
-                <a href="index.html" class="titre_site">FèsMoiVoir</a>
-            </div>
-            <ul>
+        <nav id="navPc">
+          <div class="ensemble_logo" style="display: flex">
+            <img class="logo" src="assets/logo.png" alt="logo" />
+            <a href="#" class="titre_site">FèsMoiVoir</a>
+          </div>
+          <ul>
             <li><a href="#">HISTOIRE</a></li>
             <li class="menu_deroulant">
-                <a href="#">LIEUX</a>
-                <ul class="sous_menu">
+              <a href="#">LIEUX</a>
+              <ul class="sous_menu">
                 <li><a href="#">La Médina</a></li>
                 <li><a href="#">Le musée de l'artisanat</a></li>
                 <li><a href="#">la "Medersa Attarine"</a></li>
                 <li><a href="#">Le palais royal</a></li>
                 <li><a href="#">Le jardin "Jnan Sbil"</a></li>
                 <li><a href="#">Les tombeaux de Marinid</a></li>
-                </ul>
+              </ul>
             </li>
             <li><a href="#">ACCUEIL</a></li>
             <li><a href="#">CONTACT</a></li>
-            </ul>
+          </ul>
         </nav>
+    
+        <nav id="navMobile">
+          <span style="font-size: 4rem; cursor: pointer" onclick="openNav()"
+            >&#9776;
+          </span>
+        </nav>
+    
+        <div id="navOverlay" class="overlay">
+          <!-- Button to close the overlay navigation -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <!-- Overlay content -->
+          <div class="overlay-content">
+            <a href="#histoire" onclick="closeNav()">Histoire</a>
+            <a href="#cardsContainer" onclick="closeNav()">Les Lieux</a>
+            <a href="#" onclick="closeNav()">Accueil</a>
+            <a href="#formulaire" onclick="closeNav()">Contact</a>
+          </div>
+        </div>
+    
+        <!-- The overlay -->
 
     <!-- ------------------------------------------------------------------------ -->
     <!-- ---------------------main----------------------------------------------- -->
@@ -82,4 +104,5 @@
           </footer>
     </body>
     <script type="module" src="src/place_info.js"></script>
+    <script src="src/header.js"></script>
 </html>
