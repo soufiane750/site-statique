@@ -63,15 +63,48 @@
     <!-- -------------------Carousel--------------------------------------------- -->
     <!-- ------------------------------------------------------------------------ -->
 
-    <div class="conteneur-image">
-      <img class="img_debut" src="assets/fes.jpg" alt="Mon image" />
-      <div class="texte-image">
-        <p>
-          Bienvenue sur le site de la ville de Fès <br />
-          مرحبا بكم في موقع فاس <br />
-          Marhaban bikum fi mawqie Fas
-        </p>
+    <div class="carousel-container">
+      <div class="carousel">
+        <!-- Première diapositive -->
+        <div class="slide">
+          <img src="./assets/mosque.jpg" alt="Image mosque" />
+          <div class="content">
+            <h2>Bienvenue sur le site de la ville de Fès</h2>
+            <p>مرحبا بكم في موقع فاس</p>
+            <p>Marhaban bikum fi mawqie Fas</p>
+          </div>
+        </div>
+        <!-- Deuxième diapositive -->
+        <div class="slide">
+          <img src="./assets/fes.jpg" alt="Image 2" />
+          <div class="content">
+            <h2>Découvrez la plus emblématique des villes impériales</h2>
+            <p>اكتشف أكثر مدن الإمبراطورية رمزية</p>
+            <p>aktashaf 'akthar mudun al'iimbiraturiat</p>
+          </div>
+        </div>
+        <!-- Troisième diapositive -->
+        <div class="slide">
+          <img src="assets/fes_2.jpg" alt="Image 3" />
+          <div class="content">
+            <h2>
+              Fès est la plus modeste des quatre villes impériales du Maroc
+            </h2>
+            <p>فاس هي الأكثر تواضعًا بين المدن الإمبراطورية الأربع في المغرب</p>
+            <p>
+              fas hi al'akthar twadean bayn almudun al'iimbiraturiat al'arbae fi
+              almaghrib
+            </p>
+          </div>
+        </div>
       </div>
+
+      <div class="carousel-indicators">
+        <ul></ul>
+      </div>
+
+      <button class="btn-arrow" id="prevBtn">&#8249;</button>
+      <button class="btn-arrow" id="nextBtn">&#8250;</button>
     </div>
     <!-- </header> -->
 
@@ -102,10 +135,7 @@
     <!-- ------------------------------------------------------------------------ -->
     <!-- --------------------------Card------------------------------------------ -->
     <!-- ------------------------------------------------------------------------ -->
-    <section id="cards-container">
-      
-    </section>
-
+    <section id="cards-container"></section>
 
     <!-- ------------------------------------------------------------------------ -->
     <!-- ---------------------------Form----------------------------------------- -->
