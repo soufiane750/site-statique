@@ -1,0 +1,135 @@
+/* ----------------------------- */
+/* ------------Main------------- */
+/* ----------------------------- */
+
+
+.carousel-container {
+  position: relative;
+  background-color: #fff;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden; /* Masque les éléments qui dépassent de la zone du carrousel */
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Rend les diapositives invisibles */
+    transition: opacity 0.5s ease; /* Ajoute une transition en fondu lors du changement de diapositive */
+}
+
+.slide.active {
+    opacity: 1; /* Rend la diapositive active visible */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste l'image pour remplir la diapositive sans déformation */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre le contenu verticalement et horizontalement */
+    text-align: center; /* Centre le texte horizontalement */
+    color: white;
+    /* background-color light grey and opacity 0,7 with rgba() */
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.7147233893557423) 0%,
+            rgba(255, 255, 255, 0) 100%
+    );
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.carousel-indicators ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-indicators li.active {
+    background-color: #f29849;
+}
+
+.btn-arrow {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 4rem;
+    background-color: white;
+    border: none;
+    width: 2rem;
+    font-size: 3rem;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 100ms;
+}
+
+.btn-arrow:hover,
+.btn-arrow:focus {
+    opacity: 1;
+}
+
+#prevBtn {
+    left: 0;
+    padding-left: 0.25rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+#nextBtn {
+    right: 0;
+    padding-left: 0.75rem;
+    border-radius: 2rem 0 0 2rem;
+}
+
+.histoire {
+  padding: 20px 50px;
+  background-color: #f29849;
+  color: white;
+}
+
+.histoire p{
+  margin: 30px;
+  font-size: 20px;
+  line-height: 2;
+}
