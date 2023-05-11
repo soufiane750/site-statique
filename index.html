@@ -1,47 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style/head_foot.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>FèsMoiVoir</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="ensemble_logo" style="display: flex">
-          <img class="logo" src="assets/logo.png" alt="logo" />
-          <a href="#" class="titre_site">FèsMoiVoir</a>
+    <!-- <header> -->
+    <!-- ------------------------------------------------------------------------ -->
+    <!-- ---------------------------Nav------------------------------------------ -->
+    <!-- ------------------------------------------------------------------------ -->
+
+    <nav id="navPc">
+      <div class="ensemble_logo" style="display: flex">
+        <img class="logo" src="assets/logo.png" alt="logo" />
+        <a href="#" class="titre_site">FèsMoiVoir</a>
+      </div>
+      <ul>
+        <li><a href="#">HISTOIRE</a></li>
+        <li class="menu_deroulant">
+          <a href="#">LIEUX</a>
+          <ul class="sous_menu">
+            <li><a href="#">La Médina</a></li>
+            <li><a href="#">Le musée de l'artisanat</a></li>
+            <li><a href="#">la "Medersa Attarine"</a></li>
+            <li><a href="#">Le palais royal</a></li>
+            <li><a href="#">Le jardin "Jnan Sbil"</a></li>
+            <li><a href="#">Les tombeaux de Marinid</a></li>
+          </ul>
+        </li>
+        <li><a href="#">ACCUEIL</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <nav id="navMobile">
+      <span style="font-size: 4rem; cursor: pointer" onclick="openNav()"
+        >&#9776;
+      </span>
+    </nav>
+
+    <div id="navOverlay" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="#histoire" onclick="closeNav()">Histoire</a>
+        <a href="#cardsContainer" onclick="closeNav()">Les Lieux</a>
+        <a href="#" onclick="closeNav()">Accueil</a>
+        <a href="#formulaire" onclick="closeNav()">Contact</a>
+      </div>
+    </div>
+
+    <!-- The overlay -->
+
+    <!-- ------------------------------------------------------------------------ -->
+    <!-- -------------------Carousel--------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------ -->
+
+    <div class="carousel-container">
+      <div class="carousel">
+        <!-- Première diapositive -->
+        <div class="slide">
+          <img src="./assets/mosque.jpg" alt="Image mosque" />
+          <div class="content">
+            <h2>Bienvenue sur le site de la ville de Fès</h2>
+            <p>مرحبا بكم في موقع فاس</p>
+            <p>Marhaban bikum fi mawqie Fas</p>
+          </div>
         </div>
-        <ul>
-          <li><a href="#">HISTOIRE</a></li>
-          <li class="menu_deroulant">
-            <a href="#">LIEUX</a>
-            <ul class="sous_menu">
-              <li><a href="#">La Médina</a></li>
-              <li><a href="#">Le musée de l'artisanat</a></li>
-              <li><a href="#">la "Medersa Attarine"</a></li>
-              <li><a href="#">Le palais royal</a></li>
-              <li><a href="#">Le jardin "Jnan Sbil"</a></li>
-              <li><a href="#">Les tombeaux de Marinid</a></li>
-            </ul>
-          </li>
-          <li><a href="#">ACCUEIL</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </nav>
-      <div class="conteneur-image">
-        <img class="img_debut" src="assets/fes.jpg" alt="Mon image" />
-        <div class="texte-image">
-          <p>
-          Bienvenue sur le site de la ville de Fès <br />
-          مرحبا بكم في موقع فاس <br />
-          Marhaban bikum fi mawqie Fas</p>
+        <!-- Deuxième diapositive -->
+        <div class="slide">
+          <img src="./assets/fes.jpg" alt="Image 2" />
+          <div class="content">
+            <h2>Découvrez la plus emblématique des villes impériales</h2>
+            <p>اكتشف أكثر مدن الإمبراطورية رمزية</p>
+            <p>aktashaf 'akthar mudun al'iimbiraturiat</p>
+          </div>
+        </div>
+        <!-- Troisième diapositive -->
+        <div class="slide">
+          <img src="assets/fes_2.jpg" alt="Image 3" />
+          <div class="content">
+            <h2>
+              Fès est la plus modeste des quatre villes impériales du Maroc
+            </h2>
+            <p>فاس هي الأكثر تواضعًا بين المدن الإمبراطورية الأربع في المغرب</p>
+            <p>
+              fas hi al'akthar twadean bayn almudun al'iimbiraturiat al'arbae fi
+              almaghrib
+            </p>
+          </div>
         </div>
       </div>
-    </header>
-    <section class="histoire">
+
+      <div class="carousel-indicators">
+        <ul></ul>
+      </div>
+
+      <button class="btn-arrow" id="prevBtn">&#8249;</button>
+      <button class="btn-arrow" id="nextBtn">&#8250;</button>
+    </div>
+    <!-- </header> -->
+
+    <!-- ------------------------------------------------------------------------ -->
+    <!-- --------------------------histoire-------------------------------------- -->
+    <!-- ------------------------------------------------------------------------ -->
+
+    <section class="histoire" id="histoire">
       <p>
         Doyenne des villes impériales, Fez fut fondée en 789 après JC par Idriss
         Ier, un descendant du prophète. Son fils, le sultan Idriss II, décide en
@@ -60,84 +132,28 @@
         traditions de l’islam.
       </p>
     </section>
-    <section class="cardsContainer">
-      <article class="cards">
-        <img src="./assets/medina.jpg" />
-        <h4>La Medina</h4>
-        <button><a href="">Découvrir</a></button>
-      </article>
 
-      <article class="cards">
-        <img src="./assets/museeArtisanat.jpg" />
-        <h4>Le musée de l'artisanat</h4>
-        <button><a href="">Découvrir</a></button>
-      </article>
+    <!-- ------------------------------------------------------------------------ -->
+    <!-- --------------------------Card------------------------------------------ -->
+    <!-- ------------------------------------------------------------------------ -->
+    <section id="cards-container"></section>
 
-      <article class="cards">
-        <img src="./assets/laMedersaAttarine.jpg" />
-        <h4>La medersa Attarine </h4>
-        <button><a href="">Découvrir</a></button>
-      </article>
+    <!-- ------------------------------------------------------------------------ -->
+    <!-- ---------------------------Form----------------------------------------- -->
+    <!-- ------------------------------------------------------------------------ -->
 
-      <article class="cards">
-        <img src="./assets/palaisRoyal.jpg" />
-        <h4>Le palais royal</h4>
-        <button><a href="">Découvrir</a></button>
-      </article>
-
-      <article class="cards">
-        <img src="./assets/jardin-jnan-sbil.jpg" />
-        <h4>Le jardin Jnan sbil</h4>
-        <button><a href="">Découvrir</a></button>
-      </article>
-
-      <article class="cards">
-        <img src="./assets/tombeauxDeMarinid.jpg" />
-        <h4>Les tombeaux de Marinid</h4>
-        <button class><a href="">Découvrir</a></button>
-      </article>
-    </section>
     <form>
-      <fieldset class="fieldset1">
+      <fieldset class="fieldset1" id="formulaire">
         <legend>Vos coordonnées</legend>
         <input type="text" name="nom" id="nom" placeholder="Nom" />
         <input type="text" name="prenom" id="prenom" placeholder="Prénom" />
         <input type="email" name="email" id="email" placeholder="E-mail" />
       </fieldset>
-      <fieldset class="fieldset2">
-        <legend>Comment avez vous entendu parlez de nous ?</legend>
-        <div>
-          <input type="radio" name="souhait" value="Internet" id="Internet" />
-          <label for="Internet">Internet</label>
-        </div>
-        <div>
-          <input
-            type="radio"
-            name="souhait"
-            value="boucheàoreille"
-            id="boucheàoreille"
-          />
-          <label for="boucheàoreille">Bouche à oreille</label>
-        </div>
-        <div>
-          <input type="radio" name="souhait" value="agence" id="agence" />
-          <label for="agence">Agence de voyage </label>
-        </div>
-        <div>
-          <input type="radio" name="souhait" value="autre" id="autre" />
-          <label for="autre">Autre...</label>
-        </div>
-
-        <label for="precisions">Si "Autre", veuillez préciser :</label>
-        <textarea
-          class="textarea"
-          name="precisions"
-          id="precisions"
-          cols="40"
-          rows="4"
-        ></textarea>
-      </fieldset>
     </form>
+
+    <!-- ------------------------------------------------------------------------ -->
+    <!-- ---------------------Footer--------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------ -->
 
     <footer>
       <ul>
@@ -171,4 +187,7 @@
       </p>
     </footer>
   </body>
+  <script type="module" src="src/main.js"></script>
+  <script type="module" src="src/carousel.js"></script>
+  <script src="src/header.js"></script>
 </html>
